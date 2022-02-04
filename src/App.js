@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { useState } from 'react';
+import FeatureSection from './components/FeatureSection';
+import PocketSection from './components/PocketSection';
+import CitySection from './components/CitySection.js';
+import ActionSection from './components/ActionSection';
+import Footer from './components/Footer';
+import Slider from './components/Slider';
+import SignIn from './components/SignIn';
+import Login from './components/Login';
+// import LogIn from './components/LogIn';
+
+function App (){
+
+   
+
+ 
+        return (
+            <div className="App">
+            <div className="header123"><Header/></div>
+           
+<div className="brightlow">
+            <div className="feature123"><FeatureSection/></div>
+            <div className="pocket123"> <PocketSection/></div>
+            <div className="action123"> <ActionSection/></div>
+            
+            <div className="city123"><CitySection/></div>
+            <div className="footer123"><Footer/></div>
+            </div></div>
+        
+    );
 }
 
 export default App;
